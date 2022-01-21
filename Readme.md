@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Andreeva Maria](https://up.htmlacademy.ru/htmlcss/33/user/2002553).
-* Наставник: [Олеся Севостьянова] (https://htmlacademy.ru/profile/id498579).
+* Наставник: [Олеся Севостьянова](https://htmlacademy.ru/profile/id498579).
 
 ---
 
