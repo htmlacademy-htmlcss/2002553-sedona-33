@@ -14,13 +14,43 @@
     font-display: swap;
   }
 
+  html {
+    height: 100%;
+  }
+
   body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     background-color: #ffffff;
+  }
+
+  .navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .navigation-menu {
+    width: 640px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation-menu-user {
+    max-width: 310px;
+    margin-left: auto;
   }
 
   .navigation-link {
@@ -48,6 +78,12 @@
     border-radius: 4px;
   }
 
+  .main-container {
+    flex-grow: 1;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .main-index {
     background-image: url("../images/background/index-background.jpg");
     background-size: 100% auto;
@@ -66,6 +102,23 @@
     font-size: 22px;
     line-height: 36px;
     color: #333333;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages-items {
+    display: flex;
+  }
+
+  .advantages-content {
+    flex-grow: 1;
+  }
+
+  .advantages-item {
+    flex-grow: 1;
   }
 
   .advantages-title {
@@ -200,6 +253,28 @@
     text-decoration: none;
   }
 
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-phone {
+    width: 720px;
+    text-align: center;
+  }
+
+  .footer-social {
+    margin-left: 72px;
+  }
+
+  .logo-htmlacademy {
+    display: block;
+    margin-right: 72px;
+  }
+
   .main-inner {
     color: black;
   }
@@ -210,6 +285,7 @@
     background-repeat: no-repeat;
     background-color: #83B3D3;
     color:#ffffff;
+    padding: 0px 71px;
   }
 
   .inner-header-title {
@@ -222,6 +298,25 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
+  }
+
+  .catalog-filter {
+    display: flex;
+  }
+
+  .catalog-filter-group-container {
+    margin-left: 67px;
+  }
+
+  .catalog-filter-group-box {
+    margin-left: 167px;
+  }
+
+  .button-container {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 81px;
   }
   
   .catalog-filter-title {
@@ -262,6 +357,18 @@
     background: none;
   }
 
+  .sorting {
+    width: 1057px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .select-control {
+    width: 287px;
+    height: 48px;
+    margin-left: 192px;
+  }
+
   .sorting-title {
     font-weight: 700;
     font-size: 30px;
@@ -278,6 +385,18 @@
     border: 2px solid #E6E6E6;
     box-sizing: border-box;
     border-radius: 4px;
+  }
+
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1056px;
+    margin: 0 auto;
+  }
+
+  .catalog-item {
+    width: 340px;
   }
 
   .catalog-item-title {
@@ -331,19 +450,42 @@
     border-radius: 4px;
   }
 
+  .pagination-box{
+    display: flex;
+    align-items: center;
+    width: 1056px;
+    margin: 0 auto;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 368px;
+  }
+
+  .pagination-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background: #83B3D3;
+    border-radius: 4px;
+  }
+
   .pagination-show-more {
     font-size: 20px;
     line-height: 26px;
-
     background: #83B3D3;
     border-radius: 4px;
+
+    
   }
 
   .pagination-link {
     font-size: 20px;
     line-height: 26px;
-    background: #83B3D3;
-    border-radius: 4px;
+    text-align: center;
   }
 
   .text-number-results {
@@ -354,6 +496,7 @@
   }
 
   .select-number-results {
+    width: 160px; 
     font-size: 18px;
     line-height: 23px;
     color: #333333;
@@ -362,3 +505,10 @@
     box-sizing: border-box;
     border-radius: 4px;
   }
+
+  .text-number-results-box {
+    width: 386px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}

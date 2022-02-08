@@ -43,21 +43,21 @@
           </ul>
         </nav>
       </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
       <header class="inner-header">
-          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
-                <span class="visually-hidden">Главная</span>
-              </a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
-            </li>
-          </ul>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
         <section class="catalog-filter-container">
-          <h2 class="visually-hidden">Фильтры по отелям</h2>
+          <h2 class="visually-hidden" hidden>Фильтры по отелям</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -82,7 +82,7 @@
                   </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-container">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul>
                 <li class="catalog-filter-item">
@@ -105,34 +105,38 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group-box">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <input class="catalog-filter-item-price" type="number" name="price-from" placeholder="от" min="0" max="10000">
                 <input class="catalog-filter-item-price" type="number" name="price-to" placeholder="до" min="0" max="10000">
             </fieldset>
-            <button class="button button-submit" type="submit">Применить</button>
-            <button class="button button-reset" type="reset">Сбросить</button>
+            <div class="button-container">
+              <button class="button button-submit" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </header>
         <section class="sorting">
-            <p class="sorting-title">
+            <div class="sorting-title">
                 Найдено гостиниц: 38
-            </p>
+            </div>
             <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Сначала дешёвые</option>
                 <option value="cheap">Сначала популярные</option>
                 <option value="expensive">Сначала дорогие</option>
             </select>
-            <a class="button" href="#">
-                <span class="visually-hidden">Мозайка</span>
-            </a>
-            <a class="button button-slide" href="#">
-                <span class="visually-hidden">Слайд шоу</span>
-            </a>
-            <a class="button button-list" href="#">
-                <span class="visually-hidden">Показать списком</span>
-            </a>
+            <div class="sorting-button">
+              <a class="button" href="#">
+                <span class="visually-hidden" hidden>Мозайка</span>
+              </a>
+              <a class="button button-slide" href="#">
+                <span class="visually-hidden" hidden>Слайд шоу</span>
+              </a>
+              <a class="button button-list" href="#">
+                <span class="visually-hidden" hidden>Показать списком</span>
+              </a>
+            </div>
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Результат жилья в Седоне</h2>
@@ -195,33 +199,37 @@
               </li>
             </ul>
             <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-            <ul class="pagination">
-              <li class="pagination-item">
-                <a class="button pagination-link pagination-current">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">10</a>
-              </li>
-            </ul>
-            <span class="text-number-results">Гостиниц на странице:</span>
-            <select class="select-number-results" aria-label="Количество результатов на странице">
-              <option value="четыре">4</option>
-              <option value="восемь">8</option>
-              <option value="двенадцать">12</option>
-            </select>
-        </section>
+            <div class="pagination-box">
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a class="button pagination-link pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="button pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="button pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="button pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="button pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="button pagination-link" href="#">10</a>
+                </li>
+              </ul>
+              <div class="text-number-results-box">
+                <p class="text-number-results">Гостиниц на странице:</p>
+                <select class="select-number-results" aria-label="Количество результатов на странице">
+                  <option value="четыре">4</option>
+                  <option value="восемь">8</option>
+                  <option value="двенадцать">12</option>
+                </select>
+              </div>
+            </div>
+          </section>
         <section class="subscription subscription-no-bg">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="description-subscription">
@@ -237,6 +245,7 @@
         </section>
     </main>
     <footer>
+      <div class="footer-container">
         <section class="footer-social">
           <ul class="footer-social-list">
             <li class="footer-social-item">
@@ -264,6 +273,7 @@
             <img src="images/logo/logo-htmlacademy.svg" width="115" height="34" alt="логотип htmlacademy" />
           </a>
         </section>
-      </footer>
+      </div>
+    </footer>
 </body>
 </html>
