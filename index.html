@@ -41,9 +41,11 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container main-index">
-      <h1 class="visually-hidden">Седона</h1>
-      <img class="picture-vector-text" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+    <main class="main-container">
+      <section class="header-index">
+        <h1 class="visually-hidden">Седона</h1>
+        <img class="picture-vector-text" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+      </section>
       <section class="advantages">
         <p class="advantages-quote">
             Седона — небольшой городок в Аризоне,<br/>
@@ -121,7 +123,7 @@
             </div>
           </li>
           <li class="advantages-item">
-            <div class="advantages-content advantages-content-color-middle">
+            <div class="advantages-content advantages-content-color-middle advantages-unit">
               <h3 class="advantages-title">
                 Небольшая<br />
                 площадь
@@ -134,7 +136,7 @@
             </div>
           </li>
           <li class="advantages-item">
-            <div class="advantages-content advantages-content-color-light">
+            <div class="advantages-content advantages-content-color-light advantages-unit">
               <h3 class="advantages-title">
                 Красивая<br />
                 дорога
@@ -147,7 +149,7 @@
             </div>
           </li>
           <li class="advantages-item">
-            <div class="advantages-content advantages-content-color-middle">
+            <div class="advantages-content advantages-content-color-middle advantages-unit">
               <h3 class="advantages-title">
                 Мало<br />
                 туристов
@@ -161,16 +163,18 @@
           </li>
         </ol>
       </section>
-      <section class="hotel_search">
+      <section class="hotel-search">
         <h2 class="visually-hidden">Поиск отелей</h2>
         <p class="hotel-search-title">Заинтересовались?</p>
         <p class="description-hotel-search">
           Укажите предполагаемые даты поездки,<br />
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a href="catalog.html" class="button hotel-search-button">
-          Поиск гостиницы в Седоне
-        </a>
+        <div class="button-wrapper">
+          <a href="catalog.html" class="button hotel-search-button">
+            Поиск гостиницы в Седоне
+          </a>
+        </div>
       </section>
       <section class="subscription">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
