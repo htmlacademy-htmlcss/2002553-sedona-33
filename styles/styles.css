@@ -42,15 +42,18 @@
     overflow: hidden;
   }
 
-  .navigation {
-    display: flex;
-    justify-content: center;
-    width: 1060px;
+  .page-header {
+    width: 1200px;
     margin: 0 auto;
   }
 
+  .navigation {
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
+  }
+
   .logo {
-    display: block;
     margin-right: 30px;
   }
 
@@ -64,7 +67,6 @@
   }
 
   .navigation-menu-user {
-    display: flex;
     align-items: center;
     max-width: 310px;
     margin-left: auto;
@@ -119,10 +121,6 @@
     padding-top: 51px;
     padding-bottom: 82px;
     margin-bottom: 64px;
-  }
-
-  .advantages {
-    margin-bottom: 81px;
   }
 
   .advantages-quote {
@@ -242,6 +240,11 @@
     background-position: top 85px center;  
   }
 
+  .hotel-search {
+    padding-top: 81px;
+    padding-bottom: 93px;
+  }
+
   .hotel-search-title {
     margin-top: 0;
     margin-bottom: 29px;
@@ -254,7 +257,7 @@
 
   .description-hotel-search {
     margin-top: 0;
-    margin-bottom: 56;
+    margin-bottom: 56px;
     text-align: center;
     font-size: 22px;
     line-height: 26px;
@@ -271,7 +274,6 @@
   .button-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 93px;
   }
 
   .subscription  {
@@ -344,6 +346,7 @@
   }
 
   .footer-container {
+    box-sizing: border-box;
     padding: 40px 72px;
     display: flex;
     align-items: center;
@@ -481,7 +484,7 @@
 
   .sorting {
     display: flex;
-    margin: 0 71px;
+    padding: 0 71px;
   }
 
   .select-control {
