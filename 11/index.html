@@ -242,56 +242,73 @@
     </footer>
     <div class="modal-container">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
+          <svg width="13" height="13" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form>
-            <div class="modal-grid">
-              <p class="modal-grid-content">Дата заезда:</p>
-              <input class="modal-input" value="27 апреля 2020">
-              <p class="modal-grid-content">Дата выезда:</p>
-              <input class="modal-input" value="1 сентября 2021">
-              <p class="modal-grid-content">Взрослые:</p>
-              <div class="modal-flex">
-                <div class="modal-button-switch">
-                  <button class="plus-minus minus">
-                    <svg width="13" height="1" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity=".3" d="M0 0v1h13V0H0Z"/>
-                     </svg>
-                  </button>
-                  <input class="field-number" type="number" value="2" name="number-adults">
-                  <button class="plus-minus plus">
-                    <svg width="13" height="13" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
-                    </svg>
-                  </button>
-                </div>
-                <div class="modal-information">
-                  <p class="modal-grid-content">Дети:</p>
-                  <span class="tooltip">
-                    <button class="modal-symbol" type="button" aria-labelledby="tooltip-label">i</button>
-                    <div class="tooltip-box">
-                      <div class="tooltip-triangle"> </div>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                    </div>
-                  </span>
-                </div>
-                <div class="modal-button-switch">
-                  <button class="plus-minus minus">
-                    <svg width="13" height="1" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity=".3" d="M0 0v1h13V0H0Z"/>
-                     </svg>
-                  </button>
-                  <input class="field-number" type="number" value="1" name="number-child">
-                  <button class="plus-minus plus">
-                     <svg width="13" height="13" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
-                    </svg>
-                  </button>
-                </div>
-               </div>
+            <div class="modal-wrapper">
+              <label class="date-information-field">
+                <span class="modal-grid-content">Дата заезда:</span>
+                <input class="modal-input" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+                <svg class="icon-date" width="15" height="15" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity=".3" fill="#000"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g>
+                </svg>
+                <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
+              </label>
+              <label class="date-information-field">
+                <span class="modal-grid-content">Дата выезда:</span>
+                <input class="modal-input" name="departure-date" value="1 сентября 2021" placeholder="Укажите дату">
+                <svg class="icon-date" width="15" height="15" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity=".3" fill="#000"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g>
+                </svg>
+                <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+              </label>
+              <div class="date-information-field">
+                <p class="modal-grid-content">Взрослые:</p>
+                <div class="modal-flex">
+                  <div class="modal-button-switch">
+                    <button class="plus-minus minus" type="button">
+                      <svg width="13" height="1" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0v1h13V0H0Z"/>
+                       </svg>
+                    </button>
+                    <input class="field-number" type="number" value="2" name="number-adults">
+                    <button class="plus-minus plus" type="button">
+                      <svg width="13" height="13" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="modal-information">
+                    <p class="modal-grid-content">Дети:</p>
+                    <span class="tooltip">
+                      <button class="modal-symbol" type="button" aria-labelledby="tooltip-label">i</button>
+                      <div class="tooltip-box">
+                        <div class="tooltip-triangle"> </div>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      </div>
+                    </span>
+                  </div>
+                  <div class="modal-button-switch">
+                    <button class="plus-minus minus" type="button">
+                      <svg width="13" height="1" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0v1h13V0H0Z"/>
+                       </svg>
+                    </button>
+                    <input class="field-number" type="number" value="1" name="number-child">
+                    <button class="plus-minus plus" type="button">
+                       <svg width="13" height="13" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                 </div>
+              </div>
             </div>
           </form>
           <button class="button modal-button">Найти</button>
