@@ -119,15 +119,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px;;
+    padding: 2px;
+    box-sizing: border-box;
     color: #FFFFFF;
     font-family: PT Sans;
     font-weight: 400;
     font-size: 10px;
     line-height: 13px;
     position: absolute;
-    min-width: 18px;
-    min-height: 18px;
+    min-width: 20px;
+    min-height: 20px;
     background: #7DB54F;
     border-radius: 10px;
     bottom: -2px;
@@ -224,7 +225,6 @@
   .first-grid-container {
     grid-row: 1 / 3;
     grid-column: 1 / -1;
-
   }
 
   .advantages-wrapper {
@@ -292,7 +292,7 @@
 
   .advantages-content-color-dark .advantages-title {
     color: #ffffff;
-}
+  }
 
   .advantages-content-color-middle {
     background: rgba(131, 179, 211, 0.12);
@@ -614,9 +614,9 @@
     display: none;
   }
 
-  .modal-container:active {
+  /* .modal-container.active {
     display: flex;
-  }
+  } */
 
   .modal {
     position: relative;
@@ -697,39 +697,39 @@
   }
 
   .modal-input {
-    width: 401px;
+    max-width: 420px;
+    width: 100%;
     height: 50px;
+    box-sizing: border-box;
     padding-left: 19px;
+    padding-right: 45px;
     font-family: PT Sans;
     font-weight: 700;
     font-size: 18px;
     line-height: 40px;
     color: #000000;
     border: none;
-    background: #F2F2F2;
+    background-color: #F2F2F2;
     border-radius: 4px;
+    background-image: url("../images/date.svg");
+    background-repeat: no-repeat;
+    background-position: right 19px center;
     appearance: none;
   }
 
-  .icon-date {
-    position: absolute;
-    right: 19px;
-    top: 18px;
-  }
-
   .modal-input:hover {
-    background: #E6E6E6;
+    background-color: #E6E6E6;
     color: rgba(0, 0, 0, 0.6);
   }
 
   .modal-input:focus {
-    background: #E6E6E6;
+    background-color: #E6E6E6;
     outline: 3px solid #83B3D3;
     color: rgba(0, 0, 0, 0.6);
   }
 
   .modal-input:active {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     outline: 2px solid #000000;
   }
 
@@ -842,6 +842,7 @@
   }
 
   .tooltip-triangle {
+    display: block;
     margin: auto;
     width: 0;
     height: 0;
@@ -1095,42 +1096,41 @@
     display: flex;
     margin-bottom: 32px;
     border-radius: 4px;
- }
+  }
 
  .catalog-filter-label {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
- }
+  }
 
- .range-input {
-  width: 119px;
-  padding-left: 19px;
-  padding-top: 14px;
-  padding-bottom: 11px;
-  font-family: PT Sans;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: #FFFFFF;
-  background-color: transparent;
-  border: none
- }
+  .range-input {
+    width: 100%;
+    padding: 14px 45px 11px 19px;
+    box-sizing: border-box;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none
+  }
 
- .range-price {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: #FFFFFF;
-  opacity: 0.3;
-  position: absolute;
-  top: 12px;
-  right: 17px;
-  display: inline-block;
-  width: 25px;
-  z-index: 1;
- }
+  .range-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.3;
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    display: inline-block;
+    width: 25px;
+    z-index: 1;
+  }
 
   .range-input::-webkit-outer-spin-button,
   .range-input::-webkit-inner-spin-button {
@@ -1308,7 +1308,6 @@
     line-height: 23px;
     color: #333333;
     font-size: 18px;
-
     border: 2px solid #E6E6E6;
     box-sizing: border-box;
     border-radius: 4px;
@@ -1331,6 +1330,7 @@
     border: 2px solid #E5E5E5;
     border-radius: 4px;
   }
+
   .sorting-view:hover:not(.sorting-view-current), :focus:not(.sorting-view-current) {
     border-color: #83B3D3;
   }
@@ -1492,6 +1492,7 @@
     row-gap: 16px;
     column-gap: 26px;
   }
+
   .catalog-item-rank {
     padding-top: 16px;
     display: grid;
@@ -1530,8 +1531,6 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
-
-
   .pagination-box{
     display: flex;
     margin-top: 30px;
@@ -1566,7 +1565,7 @@
   }
 
   .pagination-link:hover:not(.pagination-current) {
-   background-color: #68A2CA;
+    background-color: #68A2CA;
   }
 
   .pagination-link:focus:not(.pagination-current) {
