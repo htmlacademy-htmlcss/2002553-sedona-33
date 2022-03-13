@@ -32,6 +32,8 @@
   }
 
   .background-container {
+    width: 1280px;
+    margin: 0 auto;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   }
 
@@ -135,12 +137,13 @@
     min-height: 20px;
     background: #7DB54F;
     border-radius: 10px;
-    bottom: -2px;
-    left: 24px;
+    top: 5px;
+    left: 25px;
   }
 
   .navigation-menu-user .navigation-link {
     width: 42px;
+    min-height: 42px;
     padding: 0;
   }
 
@@ -413,6 +416,7 @@
   }
 
   .field {
+    /* стили для обычного состояния */
     font-family: PT Sans;
     font-weight: 400;
     width: 554px;
@@ -443,9 +447,10 @@
     outline: none;
   }
 
-   /* .error не проходит валидацию, в соответствии с типом поля */
 
-  .input.error {
+
+  .field.error {
+    /* стили для отображения ошибки  */
     background-color: #FFFFFF;
     border: 2px solid #FF5757;
   }
@@ -751,7 +756,7 @@
     font-size: 16px;
     line-height: 40px;
     color: #333333;
-    /* display: none; */
+    display: none;
   }
 
   .error {
@@ -1575,7 +1580,7 @@
   }
 
   .pagination-item:not(:last-child) {
-    margin-right: 7px;
+    margin-right: 8px;
   }
 
   .pagination-link {
