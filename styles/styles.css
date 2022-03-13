@@ -452,7 +452,7 @@
   .field.error {
     /* стили для отображения ошибки  */
     background-color: #FFFFFF;
-    border: 2px solid #FF5757;
+    outline: 2px solid #FF5757;
   }
 
   .subscription-title {
