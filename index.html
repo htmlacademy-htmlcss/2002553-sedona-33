@@ -12,7 +12,7 @@
       <header class="page-header">
         <nav class="navigation">
           <a class="logo">
-            <img class="page-header-logo" src="images/logo/logo-main.svg" width="139" height="70" alt="логотип города Седона">
+            <img class="page-header-logo" src="images/logo/logo-main.svg" width="139" height="70" alt="логотип города Седона.">
           </a>
           <ul class="navigation-menu">
             <li class="navigation-item">
@@ -54,7 +54,7 @@
       <main class="main-container">
         <section class="header-index">
           <h1 class="visually-hidden">Седона</h1>
-          <img class="picture-vector-text" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+          <img class="picture-vector-text" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!.">
         </section>
         <section class="advantages">
           <p class="advantages-quote">
@@ -80,7 +80,7 @@
                     своя жизнь
                   </p>
                 </div>
-                <img class="advantages-img" src="images/photo-1.jpg" width="800" height="384" alt="Дом в городе Седона">
+                <img class="advantages-img" src="images/photo-1.jpg" width="800" height="384" alt="Дом в городе Седона.">
               </div>
               <ul class="advantages-items advantages-wrapper">
                 <li class="advantages-item">
@@ -117,7 +117,7 @@
             </li>
             <li class="advantages-item second-grid-container">
               <div class="advantages-items advantages-wrapper">
-                <img class="advantages-img" src="images/photo-2.jpg" width="800" height="384" alt="Каньон в городе Седона">
+                <img class="advantages-img" src="images/photo-2.jpg" width="800" height="384" alt="Каньон в городе Седона.">
                 <div class="advantages-content advantages-content-color-dark">
                   <h3 class="advantages-title">
                     Там есть<br/>
@@ -193,7 +193,9 @@
             честное бойскаутское!
           </p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email" required>
+            <label>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email" required>
+            </label>
             <button class="button subscription-button" type="submit">
               Подписаться
             </button>
@@ -258,34 +260,34 @@
             <div class="modal-wrapper">
               <label class="date-information-field">
                 <span class="modal-grid-content">Дата заезда:</span>
-                <input class="modal-input" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+                <input class="modal-input" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
                 <!-- класс .message-error для отображения ошибки -->
                 <span class="message error">Мы не можем отправить вас в прошлое.</span>
               </label>
               <label class="date-information-field">
                 <span class="modal-grid-content">Дата выезда:</span>
-                <input class="modal-input" name="departure-date" value="1 сентября 2021" placeholder="Укажите дату">
+                <input class="modal-input" name="departure-date" value="1 сентября 2021" placeholder="Укажите дату" required>
                 <!-- класс .message-valid для отображения правильной даты -->
                 <span class="message">На эти даты есть свободные номера. Пока есть.</span>
               </label>
               <div class="date-information-field">
-                <p class="modal-grid-content">Взрослые:</p>
+                <label class="modal-grid-content" for="old-number">Взрослые:</label>
                 <div class="modal-flex">
                   <div class="modal-button-switch">
-                    <button class="plus-minus minus" type="button">
+                    <button class="plus-minus minus" title="minus." type="button">
                       <svg width="13" height="1" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0v1h13V0H0Z"/>
                        </svg>
                     </button>
-                    <input class="field-number" type="number" value="2" name="number-adults">
-                    <button class="plus-minus plus" type="button">
+                    <input class="field-number" id="old-number" type="number" value="2" name="number-adults">
+                    <button class="plus-minus plus" title="plus." type="button">
                       <svg width="13" height="13" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
                       </svg>
                     </button>
                   </div>
                   <div class="modal-information">
-                    <p class="modal-grid-content">Дети:</p>
+                    <label class="modal-grid-content" for="child-number">Дети:</label>
                     <span class="tooltip">
                       <button class="modal-symbol" type="button" aria-labelledby="tooltip-label">i</button>
                       <span class="tooltip-box">
@@ -295,13 +297,13 @@
                     </span>
                   </div>
                   <div class="modal-button-switch">
-                    <button class="plus-minus minus" type="button">
+                    <button class="plus-minus minus" title="minus." type="button">
                       <svg width="13" height="1" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0v1h13V0H0Z"/>
                        </svg>
                     </button>
-                    <input class="field-number" type="number" value="1" name="number-child">
-                    <button class="plus-minus plus" type="button">
+                    <input class="field-number" id="child-number" type="number" value="1" name="number-child">
+                    <button class="plus-minus plus" title="plus." type="button">
                        <svg width="13" height="13" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
                       </svg>
