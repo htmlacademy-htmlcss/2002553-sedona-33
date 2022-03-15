@@ -1322,6 +1322,7 @@
     font-weight: 400;
     border: 2px solid #E6E6E6;
     border-radius: 4px;
+    background-color: #FFFFFF;
     background-image: url("../images/select-arrow.svg");
     background-repeat: no-repeat;
     background-position: right 21px center;
@@ -1647,6 +1648,7 @@
     padding-right: 48px;
     font: inherit;
     font-weight: 400;
+    background-color: #FFFFFF;
     background-image: url("../images/select-arrow.svg");
     background-repeat: no-repeat;
     background-position: right 21px center;
